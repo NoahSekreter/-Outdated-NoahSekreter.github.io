@@ -1,0 +1,259 @@
+/* line 1, ../sass/styling.scss */
+* {
+  color: lawngreen;
+  letter-spacing: 4px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+/* line 7, ../sass/styling.scss */
+p {
+  line-height: 25px;
+}
+
+/* line 11, ../sass/styling.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 16, ../sass/styling.scss */
+h1, h2, h3, h4, ul {
+  margin: 0;
+}
+
+/* line 20, ../sass/styling.scss */
+.button {
+  padding: 12px 30px;
+  font-size: 18px;
+  border: 2px solid white;
+  border-radius: 40px;
+  transition: all .15s linear 0s;
+  -moz-transition: all .15s linear 0s;
+  -webkit-transition: all .15s linear 0s;
+}
+/* line 28, ../sass/styling.scss */
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* line 33, ../sass/styling.scss */
+.pg-canvas {
+  position: absolute;
+}
+
+/* line 37, ../sass/styling.scss */
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 42, ../sass/styling.scss */
+body .sidebar {
+  position: fixed;
+  background-color: black;
+  width: 275px;
+  height: 100%;
+}
+/* line 47, ../sass/styling.scss */
+body .sidebar .sidebar-header {
+  text-align: center;
+  margin-top: 195px;
+  margin-bottom: 65px;
+}
+/* line 51, ../sass/styling.scss */
+body .sidebar .sidebar-header img {
+  border-radius: 50%;
+}
+/* line 56, ../sass/styling.scss */
+body .sidebar .sidebar-list {
+  list-style-type: none;
+  text-align: right;
+  padding-right: 30px;
+}
+/* line 60, ../sass/styling.scss */
+body .sidebar .sidebar-list li {
+  padding-bottom: 40px;
+  font-size: 20px;
+}
+/* line 63, ../sass/styling.scss */
+body .sidebar .sidebar-list li a {
+  position: relative;
+  bottom: 0;
+}
+/* line 66, ../sass/styling.scss */
+body .sidebar .sidebar-list li a:after {
+  position: absolute;
+  content: '';
+  width: 220px;
+  border-bottom: 1px solid lawngreen;
+  padding-top: 30px;
+  right: 0;
+  bottom: -5px;
+}
+/* line 75, ../sass/styling.scss */
+body .sidebar .sidebar-list li a:hover {
+  bottom: 3px;
+}
+/* line 77, ../sass/styling.scss */
+body .sidebar .sidebar-list li a:hover:after {
+  bottom: -8px;
+}
+/* line 82, ../sass/styling.scss */
+body .sidebar .sidebar-list li a, body .sidebar .sidebar-list li a::after {
+  transition: all .1s linear 0s;
+  -moz-transition: all .1s linear 0s;
+  -webkit-transition: all .1s linear 0s;
+}
+@media screen and (max-width: 1280px) {
+  /* line 42, ../sass/styling.scss */
+  body .sidebar {
+    display: none;
+  }
+}
+/* line 95, ../sass/styling.scss */
+body .content {
+  background-color: #111111;
+  width: calc(100% - 275px);
+  transform: translateX(275px);
+}
+@media screen and (max-width: 1280px) {
+  /* line 95, ../sass/styling.scss */
+  body .content {
+    width: 100%;
+    transform: translateX(0);
+  }
+}
+
+/* line 106, ../sass/styling.scss */
+.mobile-sidebar {
+  display: none;
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 60px;
+  z-index: 2;
+}
+/* line 113, ../sass/styling.scss */
+.mobile-sidebar .mobile-sidebar-list {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 120, ../sass/styling.scss */
+.mobile-sidebar .mobile-sidebar-list a {
+  width: 150px;
+  display: inline-block;
+  font-size: 20px;
+}
+@media screen and (max-width: 1280px) {
+  /* line 106, ../sass/styling.scss */
+  .mobile-sidebar {
+    display: block;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 130, ../sass/styling.scss */
+  .mobile-sidebar .mobile-sidebar-list a {
+    width: 125px;
+    font-size: 18px;
+  }
+}
+
+/* line 137, ../sass/styling.scss */
+#main {
+  height: 100vh;
+  background: #090909 url("../images/webbing.svg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 144, ../sass/styling.scss */
+#main .main-inner {
+  z-index: 3;
+}
+/* line 146, ../sass/styling.scss */
+#main .main-inner h1 {
+  font-size: 70px;
+}
+@media screen and (max-width: 700px) {
+  /* line 146, ../sass/styling.scss */
+  #main .main-inner h1 {
+    font-size: 9vw;
+  }
+}
+/* line 152, ../sass/styling.scss */
+#main .main-inner h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 700px) {
+  /* line 152, ../sass/styling.scss */
+  #main .main-inner h2 {
+    font-size: 3.2vw;
+  }
+}
+
+/* line 162, ../sass/styling.scss */
+#about, #projects, #contact {
+  padding: 30px;
+}
+
+/* line 174, ../sass/styling.scss */
+#about .experience {
+  padding: 0 20px;
+}
+/* line 181, ../sass/styling.scss */
+#about .experience section a {
+  border-bottom: 1px lawngreen solid;
+}
+
+/* line 192, ../sass/styling.scss */
+#projects .carousel {
+  padding: 0 20px;
+  /*.active {
+    display: block;
+  }*/
+}
+/* line 195, ../sass/styling.scss */
+#projects .carousel .carousel-segment {
+  margin-bottom: 40px;
+}
+/* line 199, ../sass/styling.scss */
+#projects .carousel .carousel-segment .segment-half {
+  display: inline-block;
+  width: 100%;
+  /*100%?*/
+}
+/* line 203, ../sass/styling.scss */
+#projects .carousel .carousel-segment .segment-half p {
+  margin-bottom: 30px;
+}
+/* line 206, ../sass/styling.scss */
+#projects .carousel .carousel-segment .segment-half img {
+  width: 100%;
+}
+
+/* line 221, ../sass/styling.scss */
+#contact section {
+  margin-left: 20px;
+}
+/* line 226, ../sass/styling.scss */
+#contact section .contact-sidebar {
+  padding: 0;
+}
+/* line 228, ../sass/styling.scss */
+#contact section .contact-sidebar li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+/* line 232, ../sass/styling.scss */
+#contact section .contact-sidebar h4 {
+  font-size: 18px;
+}
+/* line 235, ../sass/styling.scss */
+#contact section .contact-sidebar a {
+  border-bottom: 1px solid lawngreen;
+}
