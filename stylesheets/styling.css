@@ -1,13 +1,13 @@
 /* line 1, ../sass/styling.scss */
 * {
-  color: lawngreen;
-  letter-spacing: 4px;
+  color: chartreuse;
+  letter-spacing: 3px;
   font-family: 'Source Code Pro', monospace;
 }
 
 /* line 7, ../sass/styling.scss */
 p {
-  line-height: 25px;
+  line-height: 28px;
 }
 
 /* line 11, ../sass/styling.scss */
@@ -84,7 +84,7 @@ body .sidebar .sidebar-list li a:after {
   position: absolute;
   content: '';
   width: 220px;
-  border-bottom: 1px solid lawngreen;
+  border-bottom: 1px solid chartreuse;
   padding-top: 30px;
   right: 0;
   bottom: -5px;
@@ -207,7 +207,7 @@ body .content {
 }
 /* line 181, ../sass/styling.scss */
 #about .experience section a {
-  border-bottom: 1px lawngreen solid;
+  border-bottom: 1px chartreuse solid;
 }
 
 /* line 192, ../sass/styling.scss */
@@ -220,40 +220,47 @@ body .content {
 /* line 195, ../sass/styling.scss */
 #projects .carousel .carousel-segment {
   margin-bottom: 40px;
+  display: inline-flex;
+  width: 49%;
 }
-/* line 199, ../sass/styling.scss */
-#projects .carousel .carousel-segment .segment-half {
-  display: inline-block;
-  width: 100%;
-  /*100%?*/
+@media screen and (max-width: 900px) {
+  /* line 195, ../sass/styling.scss */
+  #projects .carousel .carousel-segment {
+    width: 100%;
+  }
 }
 /* line 203, ../sass/styling.scss */
-#projects .carousel .carousel-segment .segment-half p {
-  margin-bottom: 30px;
+#projects .carousel .carousel-segment .segment-half h4 {
+  font-size: 18px;
 }
 /* line 206, ../sass/styling.scss */
+#projects .carousel .carousel-segment .segment-half p {
+  margin-bottom: 30px;
+  padding-right: 5px;
+}
+/* line 210, ../sass/styling.scss */
 #projects .carousel .carousel-segment .segment-half img {
   width: 100%;
 }
 
-/* line 221, ../sass/styling.scss */
+/* line 225, ../sass/styling.scss */
 #contact section {
   margin-left: 20px;
 }
-/* line 226, ../sass/styling.scss */
+/* line 230, ../sass/styling.scss */
 #contact section .contact-sidebar {
   padding: 0;
 }
-/* line 228, ../sass/styling.scss */
+/* line 232, ../sass/styling.scss */
 #contact section .contact-sidebar li {
   list-style: none;
   margin-bottom: 20px;
 }
-/* line 232, ../sass/styling.scss */
+/* line 236, ../sass/styling.scss */
 #contact section .contact-sidebar h4 {
   font-size: 18px;
 }
-/* line 235, ../sass/styling.scss */
+/* line 239, ../sass/styling.scss */
 #contact section .contact-sidebar a {
-  border-bottom: 1px solid lawngreen;
+  border-bottom: 1px solid chartreuse;
 }
